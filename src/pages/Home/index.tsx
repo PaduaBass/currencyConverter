@@ -34,14 +34,14 @@ const Home: React.FC = () => {
                 calc(value);
             }}>
                 <Select.Item value="" label="Selecione uma opção" />
-                {data.map((item: Currency, index: number) => <Select.Item value={item.ask} key={String(index)} label={item.name.split('/')[1] + ' / ' + item.name.split('/')[0]} />)}
+                {data.map((item: Currency, index: number) => <Select.Item value={item.ask} key={String(index)} label={item.name} />)}
             </Select>
             <Row>
-                <BRL name="currency-brl" size={18} color={!currency ? "#fff" : "#333"} />
+                <BRL name="usd" size={18} color={!currency ? "#fff" : "#333"} />
                 <Input editable={currency && true} disabled={!currency && true} dataDetectorTypes="phoneNumber" keyboardType="number-pad" onChangeText={calc} placeholder="R$ 0.0" />
             </Row>
             <Result>
-                <ResultText><SelectIcons name={'usd'} /> {result.toFixed(2)}</ResultText>
+                <ResultText><SelectIcons name={'currency-brl'} /> {result.toFixed(2)}</ResultText>
             </Result>
             <Signature>Developed by Pádua Feijão</Signature>
         </Content>

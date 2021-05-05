@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { Picker } from '@react-native-community/picker';
 import { Platform } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import Icon from 'react-native-vector-icons/FontAwesome'
 export const Container = styled.View`
     height: 100%;
     width: 100%;
