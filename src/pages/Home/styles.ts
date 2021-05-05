@@ -55,7 +55,6 @@ export const Input = styled.TextInput<InputProps>`
 export const BRL = styled(Icon)`
     position: absolute;
     margin-left: 5px;
-
 `;
 
 export const Result = styled.View`
