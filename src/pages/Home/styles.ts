@@ -10,12 +10,12 @@ export const Container = styled.View`
     align-items: center;
 `;
 
-export const Content = styled.View`
+export const Content = styled.KeyboardAvoidingView`
     background: #333;
     border-radius: 8px;
     padding: 20px;
-    width: ${Platform.OS === 'web' ?  '40%' : '80%'};
-    height: 50%;
+    width: ${Platform.OS === 'web' ?  '40%' : '90%'};
+    height: 400px;
     justify-content: center;
 `;
 
@@ -55,6 +55,7 @@ export const Input = styled.TextInput<InputProps>`
 export const BRL = styled(Icon)`
     position: absolute;
     margin-left: 5px;
+    z-index: 9999;
 `;
 
 export const Result = styled.View`
@@ -89,9 +90,9 @@ export const RowTitle = styled.View`
     align-items: center;
     position: absolute;
     justify-content: center;
-    top: 10;
-    left: ${Platform.OS === 'web' ?  '20%' : '40%'};
-    right: ${Platform.OS === 'web' ?  '20%' : '40%'};
+    top: 7%;
+    left: 20%;
+    right: 20%;
 `;
 
 export const Signature = styled.Text`
@@ -101,4 +102,7 @@ export const Signature = styled.Text`
     font-size: 13px;
     color: #eee;
     top: 90%;
+    align-self: center
+   
+
 `;

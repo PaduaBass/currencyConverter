@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             </Select>
             <Row>
                 <BRL name="usd" size={18} color={!currency ? "#fff" : "#228B22"} />
-                <Input editable={currency && true} disabled={!currency && true} dataDetectorTypes="phoneNumber" keyboardType="number-pad" onChangeText={calc} placeholder="Digite o valor aqui" />
+                <Input editable={currency ? true : false} disabled={!currency && true} dataDetectorTypes="phoneNumber" keyboardType="number-pad" onChangeText={calc} placeholder="Digite o valor aqui" />
             </Row>
             <Result>
                 <ResultText><SelectIcons name={'currency-brl'} color={result === 0 ? "#333" : "#228B22" } /> {result.toFixed(2)}</ResultText>
