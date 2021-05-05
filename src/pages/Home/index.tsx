@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <Content>
             <RowTitle>
                 <ContentLogo>
-                    <Logo name="dollar" size={20} color="#fff" />
+                    <Logo name="dollar" size={20} color="gold" />
                 </ContentLogo>
                 <Title>CONVERSOR DE MOEDAS</Title>
             </RowTitle>

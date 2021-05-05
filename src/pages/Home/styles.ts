@@ -23,7 +23,7 @@ export const ContentLogo = styled.View`
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid #eee;
+    border: 2px solid gold;
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
