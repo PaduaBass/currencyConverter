@@ -27,7 +27,6 @@ const CurrencyProvider: React.FC = ({ children }) => {
     const getData = useCallback(async () => {
         const response = await api.get('/all');
         setData(Object.values(response.data));
-        console.log(Object.values(response.data));
     }, []);
     useEffect(() => {
         async function load() {
